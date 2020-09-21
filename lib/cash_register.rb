@@ -35,9 +35,7 @@ attr_accessor :cash_register, :total, :items, :price, :last_transaction
       
   
   def void_last_transaction
-    @total -= @price
-    @total -= @last_transaction
-    #self.total = self.total - self.last_transaction
+    @total = @total - @last_transaction
   end
   
 end
