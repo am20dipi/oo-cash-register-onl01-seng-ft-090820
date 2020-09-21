@@ -9,7 +9,7 @@ attr_accessor :cash_register, :total, :items, :price, :last_transaction, :discou
   
   def add_item(item, price, quantity = 1)
     @price = price
-    @last_transaction = (@price * @quantity) + @total
+    @last_transaction = (price * quantity)
     self.total += price * quantity
     if quantity > 1
       counter = 0
